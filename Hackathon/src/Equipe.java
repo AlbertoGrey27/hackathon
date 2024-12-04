@@ -110,19 +110,24 @@ public class Equipe {
     public void CadastrarIntegrantes(){
         for (int i = 0 ; i < getNumeroIntegrantes(); i++){
             System.out.println("Digite o nome do "+(i+1)+"º integrante:");
-            System.out.println(i);
+            
             nomeIntegrante[i] = sc.nextLine();
             integrantes.add(new Integrante(nomeIntegrante[i]));
         }
     }
-    public void exibirIntegrantes(){
+    public void exibirInformacoes(){
+        System.out.println(getNomeEquipe());
         for(int i = 0; i < integrantes.size(); i++){
            if (integrantes.get(i).isLider()==true) {
-            System.out.println("Nome do lider : "+integrantes.get(i).getNomeIntegrante());
+            System.out.println("Nome do lider: "+integrantes.get(i).getNomeIntegrante());
            }else{
-            System.out.println("Nome do integrante : "+integrantes.get(i).getNomeIntegrante());
-           }
-            
+            System.out.println("Nome do integrante: "+integrantes.get(i).getNomeIntegrante());
+           }   
+        }
+        if (robo.getAssociado().equals(true)) {
+            robo.exibirInformacoes();
+        }else{
+            System.out.println("Essa equipe ainda não tem um robo");
         }
     }
             
