@@ -55,6 +55,13 @@ public class Robo {
         this.associado = associado;
     }
 
+    public void exibirInformacoes(){
+        System.out.println("Nome do robo: "+getNomeRobo());
+        System.out.println("Categoria de peso do robo: "+getPeso());
+        System.out.println("Tipo de dano do robo: "+getTipo());
+        System.out.println("Sistema operacional do robo: "+getSistemaOperacional());
+    }
+
     
 
 
