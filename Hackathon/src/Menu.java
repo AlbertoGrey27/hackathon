@@ -69,9 +69,9 @@ public class Menu {
                     check1=true;
                     check2=true;
                     if (equipes.isEmpty()) {
-                        System.out.println("Não a equipes cadastradas");
+                        System.out.println("Não há equipes cadastradas");
                     }else if (robos.isEmpty()) {
-                        System.out.println("Não a robos cadastrados");
+                        System.out.println("Não há robos cadastrados");
                     } else{
                         for (Equipe equipe : equipes) {
                             System.out.println(equipe.getNomeEquipe());
