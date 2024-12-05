@@ -1,0 +1,22 @@
+✅Cadastro de Equipes
+
+✅Cadastro de Robôs
+
+✅Cadastro de Torneios
+
+✅Gestão de Combates
+Pontuações
+
+❌Como usuário, quero cadastrar juízes com nome e experiência, para que possam avaliar os combates.
+
+
+❌Como usuário, desejo que o sistema permita inserir as pontuações de cada juiz em tempo real durante os combates, para calcular o resultado.
+
+Monitoramento Inicial
+✅Como usuário, quero consultar o cronograma de combates de um torneio, para planejar os horários.
+
+
+❌Como usuário, desejo visualizar informações detalhadas dos robôs participantes, para conhecer suas capacidades antes do combate.
+
+
+

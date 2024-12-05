@@ -31,9 +31,8 @@ public class Combate {
     
 
     public void saberParticipantes(){
-        int i = 0;
         for (Robo robo : robos) {
-            System.out.println("Robo "+ (i+1) +":"+ robo.getNomeRobo());
+            robo.exibirInformacoes();
         }
     }
 

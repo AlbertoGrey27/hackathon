@@ -44,21 +44,13 @@ public class Torneio {
         this.local = local;
     }
 
-    public void cadastrarCombate(){
-        String resp1,resp2,resp3,resp4;
-        if (equipesTorneio.size()>=2){
+    public void cadastrarCombate(Robo robo1,Robo robo2){
+        String resp1,resp2;
             System.out.println("Qual a duração do combate?");
             resp1 = sc.next();
             System.out.println("Qual o local");
             resp2 = sc.next();
-            System.out.println("Robos cadastrados:");
-            //Descobrir como receber um arraylist de robos AQUI.
-
-            System.out.println("Qual o nome do robo 1?");
-        }else {
-            System.out.println("Não tem equipes suficientes para combates");
-        }
-
+            combates.add(new Combate(resp1, resp2, robo1, robo2));
     }
 
     public void cadastrarEquipe(Equipe equipe){
@@ -69,6 +61,17 @@ public class Torneio {
         System.out.println("Data: "+getDataTorneio());
         System.out.println("Local: "+getLocal());
         System.out.println("Categoria de peso: "+getCategoriaPeso());
+    }
+    public void exibirEquipes(){
+        for (Equipe equipe : equipesTorneio) {
+            equipe.exibirInformacoes();
+        }
+    }
+    public void exibirCombates(){
+        for (Combate combate : combates) {
+            System.out.println(combate.getLocal()+" " + combate.getDuraçao());
+            combate.saberParticipantes();
+        }
     }
 
 
